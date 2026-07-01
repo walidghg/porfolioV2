@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walid Ghouzza | Portfolio</title>
+    <!-- css et icones technos -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+    <!-- animation de fond -->
+    <div id="particles-js"></div>
+
+    <main class="content">
+        
+        <!-- intro hero section -->
+        <section id="accueil" class="hero-section">
+            <div class="hero-intro">
+                <h1 class="logo">Walid Ghouzza</h1>
+                <!-- effet écriture automatique -->
+                <h2 class="typewriter-text"><span id="typewriter"></span></h2>
+                
+                <p class="search-status">À la recherche d'une alternance<br><span>Rythme : 6 semaines en entreprise / 2 semaines à l'école</span></p>
+                
+                <div class="hero-buttons">
+                    <a href="cv.pdf" target="_blank" class="btn-neon btn-cv">CV (PDF)</a>
+                    <a href="#contact" class="btn-neon btn-secondary">Me contacter</a>
+                </div>
+            </div>
+
+            <!-- navigation bulles -->
+            <div class="bubbles-nav">
+                <a href="#apropos" class="nav-bubble bubble-about"><span>À Propos</span></a>
+                <a href="#projets" class="nav-bubble bubble-projects"><span>Projets</span></a>
+                <a href="#contact" class="nav-bubble bubble-contact"><span>Contact</span></a>
+            </div>
+        </section>
+
+        <!-- a propos -->
+        <section id="apropos" class="about-section">
+            <h2 class="section-title">&lt; À Propos /&gt;</h2>
+            <div class="about-text">
+                <p>Passionné par l'univers du développement et des technologies web, je perfectionne mes compétences au sein d'<strong>Epitech</strong>. Mon objectif est de concevoir des applications performantes, sécurisées et scalables.</p>
+                <p>Curieux et investi, j'accorde une grande importance à la qualité du code, à l'automatisation et à l'expérience utilisateur, des principes que je m'efforce d'appliquer dans chaque projet sur lequel j'interviens.</p>
+            </div>
+
+            <h3 class="subsection-title">Stack Technique</h3>
+            <div class="skills-icons-grid">
+                <div class="skill-icon-card" title="React"><i class="devicon-react-original colored"></i><span>React</span></div>
+                <div class="skill-icon-card" title="Node.js"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                <div class="skill-icon-card" title="PHP"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                <div class="skill-icon-card" title="Laravel"><i class="devicon-laravel-original colored"></i><span>Laravel</span></div>
+                <div class="skill-icon-card" title="Docker"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                <div class="skill-icon-card" title="WordPress"><i class="devicon-wordpress-plain colored"></i><span>WordPress</span></div>
+            </div>
+
+            <div class="profile-details-grid">
+                <div class="detail-box">
+                    <h3>🧠 Soft Skills</h3>
+                    <ul>
+                        <li>Adaptabilité</li>
+                        <li>Résolution de problèmes sous pression</li>
+                        <li>Persévérance</li>
+                        <li>Organisation et esprit d'équipe</li>
+                    </ul>
+                </div>
+                <div class="detail-box">
+                    <h3>🚀 En apprentissage (Veille)</h3>
+                    <ul>
+                        <li>TypeScript</li>
+                        <li>Next.js & Server Side Rendering</li>
+                        <li>Sécurisation avancée des API REST</li>
+                    </ul>
+                </div>
+                <div class="detail-box">
+                    <h3>🎯 Centres d'intérêt</h3>
+                    <ul>
+                        <li>Jiu-Jitsu Brésilien (Ceinture marron)</li>
+                        <li>Création de jeux vidéo & Tech</li>
+                        <li>Rap français & Musique urbaine</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- parcours -->
+        <section id="experiences" class="experience-section">
+            <h2 class="section-title">&lt; Expériences /&gt;</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="time-header">
+                        <h3>Bénévole - Salon VivaTech</h3>
+                        <span class="date">2026</span>
+                    </div>
+                    <h4>Stand Foxtron</h4>
+                    <p>Accueil des professionnels, présentation des technologies du stand et assistance opérationnelle lors du plus grand salon européen de la tech.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="time-header">
+                        <h3>Employé d'Hôtellerie</h3>
+                        <span class="date">2024 - 2025</span>
+                    </div>
+                    <h4>Expérience en Établissement Hôtelier</h4>
+                    <p>Accueil et prise en charge de la clientèle, gestion des demandes de services, organisation opérationnelle et maintien des standards de qualité. Cette expérience m'a permis de développer un sens aigu de la relation client, de la gestion du stress et de la polyvalence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- grille projets complete (6 projets) -->
+        <section id="projets" class="projects-section">
+            <h2 class="section-title">&lt; Mes Projets /&gt;</h2>
+            
+            <div class="projects-grid">
+                <!-- p1 -->
+                <div class="project-card" data-title="Space Invaders" data-repo="https://github.com/walidghg/SpaceInvaders" data-demo="" data-desc="Développement d'un jeu vidéo Space Invaders combiné à une forte dimension DevOps. Mise en place de pipelines d'automatisation, gestion des environnements et configuration d'une infrastructure propre pour le déploiement du jeu.">
+                    <h3>Space Invaders</h3>
+                    <p>Jeu vidéo classique avec intégration DevOps complète.</p>
+                    <div class="tech-tags"><span>DevOps</span><span>Gaming</span></div>
+                </div>
+
+                <!-- p2 -->
+                <div class="project-card" data-title="Connect'In" data-repo="https://github.com/walidghg/ConnectIn" data-demo="" data-desc="Création d'un mini réseau social interne. Architecture découplée basée sur une API Laravel robuste pour le backend, gestion de la base de données relationnelle et documentation complète des endpoints pour la communication avec le front.">
+                    <h3>Connect'In</h3>
+                    <p>Mini réseau social interne avec API Laravel.</p>
+                    <div class="tech-tags"><span>Laravel</span><span>API REST</span></div>
+                </div>
+
+                <!-- p3 : Popeye corrigé -->
+                <div class="project-card" data-title="Popeye" data-repo="https://github.com/walidghg/Popeye" data-demo="" data-desc="Conteneurisation complète d'une application de vote multi-services via Docker. Écriture des fichiers Docker Compose, isolation des services, gestion des volumes de données et optimisation des communications réseau entre les conteneurs.">
+                    <h3>Popeye</h3>
+                    <p>Conteneurisation d'une application multi-services avec Docker.</p>
+                    <div class="tech-tags"><span>Docker</span><span>Conteneurisation</span></div>
+                </div>
+
+                <!-- p4 -->
+                <div class="project-card" data-title="Webmag" data-repo="https://github.com/walidghg/webmag" data-demo="https://walidghg.github.io/webmag" data-desc="Conception et développement de Webmag, un site internet fun, décalé et humoristique entièrement centré sur le thème des serviettes. Travail axé sur la créativité graphique en JavaScript natif et sur l'expérience utilisateur.">
+                    <h3>Webmag</h3>
+                    <p>Site web humoristique et interactif dédié aux serviettes.</p>
+                    <div class="tech-tags"><span>JavaScript</span><span>Fun</span></div>
+                </div>
+
+                <!-- p5 -->
+                <div class="project-card" data-title="Shoe Shop" data-repo="https://github.com/walidghg/shop" data-demo="https://walidghg.github.io/shop" data-desc="Développement d'une plateforme e-commerce moderne pour la vente de chaussures. Intégration d'un catalogue dynamique, gestion d'un panier d'achat fluide en front-end et design adaptatif pour mobile.">
+                    <h3>Shoe Shop</h3>
+                    <p>Boutique en ligne moderne pour la vente de chaussures.</p>
+                    <div class="tech-tags"><span>E-commerce</span><span>UX / UI</span></div>
+                </div>
+
+                <!-- p6 -->
+                <div class="project-card" data-title="LearnSphere Quiz" data-repo="https://github.com/walidghg/LearnSphereQuiz" data-demo="" data-desc="Développement d'un plugin WordPress sur-mesure pour la gestion de cours en ligne et de quiz interactifs. Utilisation avancée de PHP, création de Custom Post Types et intégration de champs personnalisés via Advanced Custom Fields (ACF).">
+                    <h3>LearnSphere Quiz</h3>
+                    <p>Plugin WordPress sur-mesure pour cours et quiz.</p>
+                    <div class="tech-tags"><span>WordPress</span><span>PHP</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mail form -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">&lt; Contact /&gt;</h2>
+            <p>Disponible pour échanger concernant une opportunité d'alternance ou un projet.</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Votre adresse email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+                </div>
+                <button type="submit" class="btn-neon">Envoyer le message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/walid-ghouzza-82435433b/" target="_blank" class="social-icon" title="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://github.com/walidghg" target="_blank" class="social-icon" title="GitHub">
+                    <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- modale sans balise image -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">Titre du Projet</h3>
+            <p id="modal-desc">Description...</p>
+            <div class="modal-buttons" style="display: flex; gap: 15px; margin-top: 25px;">
+                <a id="modal-repo-link" href="#" target="_blank" class="btn-neon" style="font-size: 0.9rem; padding: 10px 20px;">Code GitHub</a>
+                <a id="modal-demo-link" href="#" target="_blank" class="btn-neon btn-secondary" style="font-size: 0.9rem; padding: 10px 20px; border-color: var(--accent); color: var(--accent);">Démo Live</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
