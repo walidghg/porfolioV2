@@ -436,7 +436,8 @@ h1.logo {
     .hero-section {
         height: auto;
         min-height: 100vh;
-        padding: 120px 20px 40px 20px;
+        padding: 140px 20px 40px 20px; /* On augmente le padding pour dégager de la navbar */
+        justify-content: flex-start; /* Aligne le contenu vers le haut au lieu de le centrer pour éviter qu'il ne passe sous la navbar */
     }
     .bubbles-nav { 
         flex-direction: row; 
