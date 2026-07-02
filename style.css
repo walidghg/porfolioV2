@@ -1,4 +1,3 @@
-/* palette couleur premium */
 :root {
     --bg-color: #111827; 
     --text-main: #f9fafb; 
@@ -22,7 +21,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-/* canvas particles */
 #particles-js {
     position: fixed;
     top: 0;
@@ -38,7 +36,6 @@ body {
     z-index: 1;
 }
 
-/* hero / top screen */
 .hero-section {
     height: 100vh;
     display: flex;
@@ -64,7 +61,6 @@ h1.logo {
     font-weight: 800;
 }
 
-/* typing effect layout */
 .typewriter-text {
     font-size: 1.5rem;
     font-weight: 400;
@@ -94,7 +90,6 @@ h1.logo {
     font-weight: bold;
 }
 
-/* bubbles nav system */
 .bubbles-nav {
     display: flex;
     gap: 50px;
@@ -141,7 +136,6 @@ h1.logo {
 @keyframes floatOrganic2 { 0%, 100% { transform: translateY(0) translateX(0); } 50% { transform: translateY(-22px) translateX(-10px); } }
 @keyframes floatOrganic3 { 0%, 100% { transform: translateY(0) translateX(0); } 50% { transform: translateY(-12px) translateX(12px); } }
 
-/* standard buttons */
 .hero-buttons {
     display: flex;
     gap: 20px;
@@ -173,7 +167,6 @@ h1.logo {
 .btn-neon.btn-secondary { background: transparent; color: #fff; border-color: #4b5563; }
 .btn-neon.btn-secondary:hover { background: #4b5563; color: #fff; box-shadow: 0 0 20px #4b5563; }
 
-/* typography section headers */
 .section-title {
     font-size: 2.5rem;
     text-align: center;
@@ -188,7 +181,6 @@ h1.logo {
     color: #fff;
 }
 
-/* about area grid layout */
 .about-section {
     pointer-events: auto;
     padding: 100px 50px;
@@ -210,7 +202,6 @@ h1.logo {
 
 .about-text strong { color: var(--accent); }
 
-/* stack logos grid */
 .skills-icons-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -277,7 +268,6 @@ h1.logo {
 }
 .detail-box ul li::before { content: '➔'; position: absolute; left: 0; color: var(--accent); }
 
-/* career timeline */
 .experience-section {
     pointer-events: auto;
     padding: 100px 50px;
@@ -315,7 +305,6 @@ h1.logo {
 .timeline-item .date { background: rgba(139, 92, 246, 0.15); color: var(--accent); padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; }
 .timeline-item p { color: #9ca3af; line-height: 1.6; font-size: 0.95rem; }
 
-/* projects layout block */
 .projects-section {
     pointer-events: auto;
     padding: 100px 50px;
@@ -351,7 +340,6 @@ h1.logo {
 .tech-tags { display: flex; gap: 10px; flex-wrap: wrap; }
 .tech-tags span { background: rgba(139, 92, 246, 0.1); color: var(--accent); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; border: 1px solid rgba(139, 92, 246, 0.3); }
 
-/* text fields and submit mail form */
 .contact-section {
     pointer-events: auto;
     padding: 100px 20px;
@@ -362,45 +350,11 @@ h1.logo {
 
 .contact-section p { color: #9ca3af; margin-bottom: 35px; font-size: 1.15rem; }
 
-.contact-form {
-    background: var(--box-bg);
-    backdrop-filter: blur(10px);
-    border: 1px solid #374151;
-    padding: 40px;
-    border-radius: 8px;
-    margin: 0 auto 40px auto;
-    text-align: left;
-    max-width: 600px;
-}
-
-.form-group { margin-bottom: 20px; }
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    background: #1f2937;
-    border: 1px solid #374151;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    font-family: inherit;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    border-color: var(--accent);
-    outline: none;
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
-}
-
-.contact-form button { width: 100%; margin-top: 10px; }
-
 .social-links { display: flex; justify-content: center; gap: 30px; }
 .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; border: 1px solid #374151; background: var(--box-bg); border-radius: 50%; transition: all 0.3s ease; color: var(--text-main); text-decoration: none; cursor: pointer; }
 .social-icon svg { width: 26px; height: 26px; fill: currentColor; }
 .social-icon:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 0 20px var(--accent); }
 
-/* modal panel layout (image design removed) */
 .modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(5px); justify-content: center; align-items: center; }
 .modal-content { background: #1f2937; border: 1px solid var(--accent); border-radius: 8px; padding: 40px; width: 90%; max-width: 600px; position: relative; box-shadow: 0 0 30px rgba(139, 92, 246, 0.2); animation: modalFadeIn 0.3s ease; text-align: left; }
 .modal-content h3 { color: var(--accent); font-size: 2rem; margin-bottom: 20px; }
@@ -410,7 +364,6 @@ h1.logo {
 
 @keyframes modalFadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 
-/* screens adaptation query */
 @media (max-width: 768px) {
     h1.logo { font-size: 2.5rem; }
     .bubbles-nav { flex-direction: column; gap: 20px; }
@@ -421,6 +374,5 @@ h1.logo {
     .timeline-item::before { left: -32px; }
     .time-header { flex-direction: column; align-items: flex-start; gap: 5px; }
     .hero-buttons { flex-direction: column; gap: 12px; }
-    .contact-form { padding: 20px; }
     .modal-buttons { flex-direction: column; gap: 10px; }
 }

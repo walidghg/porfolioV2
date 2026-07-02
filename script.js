@@ -1,4 +1,3 @@
-// init background canvas particles
 try {
     particlesJS('particles-js', {
       "particles": {
@@ -38,10 +37,9 @@ try {
       "retina_detect": true
     });
 } catch (e) {
-    console.warn("particles js fail hook", e);
+    console.warn(e);
 }
 
-// dom binds
 const modal = document.getElementById("project-modal");
 const modalTitle = document.getElementById("modal-title");
 const modalDesc = document.getElementById("modal-desc");
@@ -50,7 +48,6 @@ const modalDemoLink = document.getElementById("modal-demo-link");
 const closeModalBtn = document.querySelector(".close-modal");
 const projectCards = document.querySelectorAll(".project-card");
 
-// triggers modal render (toutes les références aux images ont été supprimées)
 if (modal && projectCards.length > 0) {
     projectCards.forEach(card => {
         card.addEventListener("click", () => {
@@ -97,7 +94,6 @@ if (modal && projectCards.length > 0) {
     });
 }
 
-// typing engine animation
 const textToType = "Développeur Web & Étudiant à Epitech";
 const typewriterElement = document.getElementById("typewriter");
 let charIndex = 0;
