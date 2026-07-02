@@ -424,18 +424,58 @@ h1.logo {
 @keyframes modalFadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 768px) {
-    .navbar { padding: 15px 20px; }
-    .nav-links .desktop-link { display: none; }
-    h1.logo { font-size: 2.5rem; }
-    .bubbles-nav { flex-direction: column; gap: 20px; }
-    .nav-bubble { width: 110px; height: 110px; font-size: 0.8rem; }
-    .about-section, .experience-section { padding: 60px 20px; }
-    .projects-section { padding: 60px 20px 30px 20px; }
-    .contact-section { padding: 30px 20px 60px 20px; }
-    .skills-icons-grid { grid-template-columns: repeat(3, 1fr); gap: 15px; }
-    .timeline { margin-left: 5px; padding-left: 20px; }
-    .timeline-item::before { left: -32px; }
-    .time-header { flex-direction: column; align-items: flex-start; gap: 5px; }
-    .hero-buttons { flex-direction: column; gap: 12px; }
-    .modal-buttons { flex-direction: column; gap: 10px; }
+    .navbar { 
+        padding: 15px 20px; 
+    }
+    .nav-links .desktop-link { 
+        display: none; 
+    }
+    h1.logo { 
+        font-size: 2.3rem; 
+    }
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 20px 40px 20px;
+    }
+    .bubbles-nav { 
+        flex-direction: row; 
+        flex-wrap: wrap;
+        gap: 15px; 
+        margin-top: 40px;
+    }
+    .nav-bubble { 
+        width: 95px; 
+        height: 95px; 
+        font-size: 0.75rem; 
+    }
+    .about-section, .experience-section { 
+        padding: 60px 20px; 
+    }
+    .projects-section { 
+        padding: 60px 20px 30px 20px; 
+    }
+    .contact-section { 
+        padding: 30px 20px 60px 20px; 
+    }
+    .skills-icons-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 15px; 
+    }
+    .timeline { 
+        margin-left: 5px; 
+        padding-left: 20px; 
+    }
+    .timeline-item::before { 
+        left: -32px; 
+    }
+    .hero-buttons { 
+        flex-direction: column; 
+        gap: 12px; 
+        width: 100%;
+    }
+    .modal-buttons { 
+        flex-direction: column; 
+        gap: 10px; 
+    }
 }
