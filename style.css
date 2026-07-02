@@ -21,6 +21,55 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid #374151;
+    pointer-events: auto;
+}
+
+.nav-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links .desktop-link {
+    color: #d1d5db;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links .desktop-link:hover {
+    color: var(--accent);
+}
+
+.btn-sm {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+}
+
 #particles-js {
     position: fixed;
     top: 0;
@@ -307,8 +356,7 @@ h1.logo {
 
 .projects-section {
     pointer-events: auto;
-    padding: 100px 50px;
-    min-height: 100vh;
+    padding: 100px 50px 50px 50px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -342,7 +390,7 @@ h1.logo {
 
 .contact-section {
     pointer-events: auto;
-    padding: 100px 20px;
+    padding: 50px 20px 100px 20px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -355,6 +403,17 @@ h1.logo {
 .social-icon svg { width: 26px; height: 26px; fill: currentColor; }
 .social-icon:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 0 20px var(--accent); }
 
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 10;
+}
+
 .modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); backdrop-filter: blur(5px); justify-content: center; align-items: center; }
 .modal-content { background: #1f2937; border: 1px solid var(--accent); border-radius: 8px; padding: 40px; width: 90%; max-width: 600px; position: relative; box-shadow: 0 0 30px rgba(139, 92, 246, 0.2); animation: modalFadeIn 0.3s ease; text-align: left; }
 .modal-content h3 { color: var(--accent); font-size: 2rem; margin-bottom: 20px; }
@@ -365,10 +424,14 @@ h1.logo {
 @keyframes modalFadeIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 768px) {
+    .navbar { padding: 15px 20px; }
+    .nav-links .desktop-link { display: none; }
     h1.logo { font-size: 2.5rem; }
     .bubbles-nav { flex-direction: column; gap: 20px; }
     .nav-bubble { width: 110px; height: 110px; font-size: 0.8rem; }
-    .about-section, .experience-section, .projects-section, .contact-section { padding: 60px 20px; }
+    .about-section, .experience-section { padding: 60px 20px; }
+    .projects-section { padding: 60px 20px 30px 20px; }
+    .contact-section { padding: 30px 20px 60px 20px; }
     .skills-icons-grid { grid-template-columns: repeat(3, 1fr); gap: 15px; }
     .timeline { margin-left: 5px; padding-left: 20px; }
     .timeline-item::before { left: -32px; }

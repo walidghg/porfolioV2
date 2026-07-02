@@ -9,6 +9,18 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
+    <header class="navbar">
+        <div class="nav-logo">
+            <a href="#accueil">Walid.</a>
+        </div>
+        <div class="nav-links">
+            <a href="#apropos" class="desktop-link">À Propos de moi</a>
+            <a href="#projets" class="desktop-link">Projets</a>
+            <a href="#contact" class="desktop-link">Contact</a>
+            <a href="cv.pdf" target="_blank" class="btn-neon btn-sm">CV (PDF)</a>
+        </div>
+    </header>
+
     <div id="particles-js"></div>
     <main class="content">
         <section id="accueil" class="hero-section">
@@ -22,17 +34,21 @@
                 </div>
             </div>
             <div class="bubbles-nav">
+                <!-- J'ai gardé "À Propos" court ici pour que ça rentre bien dans la bulle ronde -->
                 <a href="#apropos" class="nav-bubble bubble-about"><span>À Propos</span></a>
                 <a href="#projets" class="nav-bubble bubble-projects"><span>Projets</span></a>
                 <a href="#contact" class="nav-bubble bubble-contact"><span>Contact</span></a>
             </div>
         </section>
+
         <section id="apropos" class="about-section">
-            <h2 class="section-title">&lt; À Propos /&gt;</h2>
+            <h2 class="section-title">&lt; À Propos de moi /&gt;</h2>
             <div class="about-text">
-                <p>Passionné par l'univers du développement et des technologies web, je perfectionne mes compétences au sein d'<strong>Epitech</strong>. Mon objectif est de concevoir des applications performantes, sécurisées et scalables.</p>
-                <p>Curieux et investi, j'accorde une grande importance à la qualité du code, à l'automatisation et à l'expérience utilisateur, des principes que je m'efforce d'appliquer dans chaque projet sur lequel j'interviens.</p>
+                <p>Passionné par l'univers du développement web, je perfectionne actuellement mes compétences à <strong>Epitech</strong> avec pour objectif de concevoir des applications performantes, sécurisées et scalables.</p>
+                <p>Mon profil ne s'arrête pas à la tech : mon expérience dans l'hôtellerie m'a forgé un véritable sens du service, une grande adaptabilité et une forte résistance au stress. En parallèle, je pratique le Jiu-Jitsu Brésilien depuis 13 ans. Aujourd'hui ceinture marron, cette discipline m'a inculqué la rigueur, la détermination face à la difficulté, et le goût du partage à travers le coaching.</p>
+                <p>Que ce soit sur les tatamis, face à des clients exigeants ou devant des lignes de code complexes, ma philosophie reste la même : m'investir pleinement, trouver des solutions et ne jamais cesser d'apprendre.</p>
             </div>
+            
             <h3 class="subsection-title">Stack Technique</h3>
             <div class="skills-icons-grid">
                 <div class="skill-icon-card" title="React"><i class="devicon-react-original colored"></i><span>React</span></div>
@@ -42,6 +58,7 @@
                 <div class="skill-icon-card" title="Docker"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
                 <div class="skill-icon-card" title="WordPress"><i class="devicon-wordpress-plain colored"></i><span>WordPress</span></div>
             </div>
+            
             <div class="profile-details-grid">
                 <div class="detail-box">
                     <h3>🧠 Soft Skills</h3>
@@ -70,6 +87,7 @@
                 </div>
             </div>
         </section>
+
         <section id="experiences" class="experience-section">
             <h2 class="section-title">&lt; Expériences /&gt;</h2>
             <div class="timeline">
@@ -78,7 +96,7 @@
                         <h3>Bénévole - Salon VivaTech</h3>
                         <span class="date">2026</span>
                     </div>
-                    <h4>Stand Foxtron</h4>
+                    <h4>Stand Techup</h4>
                     <p>Accueil des professionnels, présentation des technologies du stand et assistance opérationnelle lors du plus grand salon européen de la tech.</p>
                 </div>
                 <div class="timeline-item">
@@ -91,6 +109,7 @@
                 </div>
             </div>
         </section>
+
         <section id="projets" class="projects-section">
             <h2 class="section-title">&lt; Mes Projets /&gt;</h2>
             <div class="projects-grid">
@@ -126,6 +145,7 @@
                 </div>
             </div>
         </section>
+
         <section id="contact" class="contact-section">
             <h2 class="section-title">&lt; Contact /&gt;</h2>
             <p>Disponible pour échanger concernant une opportunité d'alternance ou un projet.</p>
@@ -142,6 +162,11 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Walid Ghouzza. Fait avec passion.</p>
+    </footer>
+
     <div id="project-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
